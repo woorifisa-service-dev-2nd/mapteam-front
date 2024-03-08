@@ -10,10 +10,10 @@ const NaverBasicMap = ({children}) => {
         const script = document.createElement('script');
 
         // 2. 생성한 <script> 요소의 src 속성에 Naver 지도 API 스크립트의 URL을 할당
-        script.src = 'https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9q9qn5q0ed';
+        // script.src = 'https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9q9qn5q0ed';
 
         // 3. 스크립트가 비동기적으로 로드되도록 설정
-        script.async = true;
+        // script.async = true;
 
         // 4. <script> 요소를 <body> 요소에 추가
         document.body.appendChild(script);
