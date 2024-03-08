@@ -1,11 +1,13 @@
 import './App.css'
+import NaverMap from './components/map/NaverMap';
 
 export default function App() {
 
 
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <h1>Naver Map Test</h1>
+      <NaverMap />
+    </div>
   )
 }
