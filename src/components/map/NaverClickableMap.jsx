@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const NaverClickableMap = ({onMarkerClick}, {children}) => {
+const NaverClickableMap = ({children}) => {
     const [map, setMap] = useState(null);
     const [infowindow, setInfowindow] = useState(null);
 
