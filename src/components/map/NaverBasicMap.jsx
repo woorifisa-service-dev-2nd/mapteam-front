@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
 
-const NaverMap = () => {
+const NaverBasicMap = ({children}) => {
+
+
+
+
     useEffect(() => {
         // 1. 새로운 <script> 요소를 생성
         const script = document.createElement('script');
 
         // 2. 생성한 <script> 요소의 src 속성에 Naver 지도 API 스크립트의 URL을 할당
-        script.src = 'https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=키값';
+        script.src = 'https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9q9qn5q0ed';
 
         // 3. 스크립트가 비동기적으로 로드되도록 설정
         script.async = true;
@@ -34,8 +38,10 @@ const NaverMap = () => {
 
     // 10. 지도를 표시할 <div> 요소를 반환
     return (
-        <div id="map" style={{ width: '100%', height: '400px' }}></div>
+        <div id="map" style={{ width: '100%', height: '400px' }}>
+            {children}
+        </div>
     );
 };
 
-export default NaverMap;
+export default NaverBasicMap;
