@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const NaverClickableMap = ({children}) => {
+const NaverClickableMap = () => {
     const [map, setMap] = useState(null);
     const [infowindow, setInfowindow] = useState(null);
 
@@ -45,9 +45,7 @@ const NaverClickableMap = ({children}) => {
     }, []);
 
     return (
-        <div id="map" style={{ width: '100%', height: '400px' }}>
-            {children}
-        </div>
+        <div id="map"></div>
     );
 };
 
