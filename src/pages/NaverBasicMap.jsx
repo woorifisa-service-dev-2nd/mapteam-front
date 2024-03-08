@@ -24,7 +24,7 @@ const NaverBasicMap = ({ children }) => {
     }, []);
 
     return (
-        <div id="map" style={{ width: '100%', height: '4000px' }}>
+        <div id="map" style={{ width: '100%', height: '900px' }}>
             {children}
         </div>
     );
